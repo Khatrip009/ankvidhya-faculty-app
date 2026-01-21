@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 - Page Not Found | AnkVidhya ERP</title>
+  <link rel="icon" href="/images/Ank_Logo.png" type="image/png">
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="404 - Page Not Found | AnkVidhya ERP">
+  <meta name="description" content="The page you're looking for doesn't exist in the AnkVidhya ERP system.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ankvidhya.com/">
+  <meta property="og:title" content="404 - Page Not Found | AnkVidhya ERP">
+  <meta property="og:description" content="The page you're looking for doesn't exist in the AnkVidhya ERP system.">
+  <meta property="og:image" content="/images/Ank_Logo.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://ankvidhya.com/">
+  <meta property="twitter:title" content="404 - Page Not Found | AnkVidhya ERP">
+  <meta property="twitter:description" content="The page you're looking for doesn't exist in the AnkVidhya ERP system.">
+  <meta property="twitter:image" content="/images/Ank_Logo.png">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    }
+    
+    body {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f56565 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 1000px;
+      width: 100%;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    
+    @media (min-width: 768px) {
+      .container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    .content {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .visual {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f56565 100%);
+      color: white;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .visual::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
+    
+    .logo {
+      height: 80px;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+      opacity: 0.9;
+    }
+    
+    .error-code {
+      font-size: 72px;
+      font-weight: bold;
+      color: #1e293b;
+      margin-bottom: 10px;
+    }
+    
+    .error-title {
+      font-size: 24px;
+      font-weight: 600;
+      color: #334155;
+      margin-bottom: 20px;
+    }
+    
+    .error-message {
+      color: #64748b;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s;
+      margin-bottom: 10px;
+      cursor: pointer;
+      border: none;
+      width: 100%;
+      font-size: 16px;
+    }
+    
+    .button-primary {
+      background: #4f46e5;
+      color: white;
+    }
+    
+    .button-primary:hover {
+      background: #4338ca;
+    }
+    
+    .button-secondary {
+      background: white;
+      color: #374151;
+      border: 1px solid #d1d5db;
+    }
+    
+    .button-secondary:hover {
+      background: #f9fafb;
+    }
+    
+    .support {
+      margin-top: 30px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+    
+    .quote {
+      position: relative;
+      z-index: 1;
+      max-width: 400px;
+    }
+    
+    .quote-text {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    
+    .quote-author {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+    
+    .links-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    
+    .link-button {
+      padding: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 6px;
+      text-align: left;
+      border: none;
+      color: white;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+    }
+    
+    .link-button:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    
+    .doodle {
+      position: absolute;
+      opacity: 0.8;
+      animation: float 6s ease-in-out infinite;
+      font-size: 24px;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); }
+      50% { transform: translate(0, -8px) rotate(4deg); }
+    }
+    
+    /* Doodle positions */
+    .doodle-1 { left: 6%; top: 8%; }
+    .doodle-2 { left: 18%; top: 22%; font-size: 28px; }
+    .doodle-3 { left: 32%; top: 6%; }
+    .doodle-4 { left: 70%; top: 12%; }
+    .doodle-5 { left: 82%; top: 32%; font-size: 28px; }
+    .doodle-6 { left: 56%; top: 40%; }
+    .doodle-7 { left: 12%; top: 62%; }
+    .doodle-8 { left: 44%; top: 74%; }
+    .doodle-9 { left: 74%; top: 66%; }
+    .doodle-10 { left: 82%; top: 78%; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="error-code">404</div>
+      <div class="error-title">Page Not Found</div>
+      <div class="error-message">
+        Oops! The page you're looking for seems to have wandered off into the mathematical unknown. 
+        Don't worry, even the greatest minds get lost sometimes.
+      </div>
+      
+      <button class="button button-primary" onclick="window.location.href = '/'">
+        Go to Homepage
+      </button>
+      
+      <button class="button button-secondary" onclick="window.history.back()">
+        Go Back
+      </button>
+      
+      <div class="support">
+        <p>Need help? Contact support@ankvidhya.com</p>
+        <p>Or call us at +91 12345 67890</p>
+      </div>
+    </div>
+    
+    <div class="visual">
+      <!-- Floating doodles -->
+      <div class="doodle doodle-1">π</div>
+      <div class="doodle doodle-2">∞</div>
+      <div class="doodle doodle-3">Σ</div>
+      <div class="doodle doodle-4">√</div>
+      <div class="doodle doodle-5">Δ</div>
+      <div class="doodle doodle-6">∫</div>
+      <div class="doodle doodle-7">∮</div>
+      <div class="doodle doodle-8">Δ</div>
+      <div class="doodle doodle-9">∂</div>
+      <div class="doodle doodle-10">≈</div>
+      
+      <img src="/images/Ank_Logo.png" alt="AnkVidhya Logo" class="logo">
+      
+      <div class="quote">
+        <div class="quote-text">
+          "Not all those who wander are lost, but sometimes they land on 404 pages."
+        </div>
+        <div class="quote-author">— AnkVidhya Support Team</div>
+      </div>
+      
+      <div class="links-grid">
+        <button class="link-button" onclick="window.location.href = '/login'">Login</button>
+        <button class="link-button" onclick="window.location.href = '/register'">Register</button>
+        <button class="link-button" onclick="window.location.href = '/dashboard'">Dashboard</button>
+        <button class="link-button" onclick="window.location.href = '/contact'">Contact Us</button>
+      </div>
+      
+      <div style="margin-top: 20px; font-size: 12px; opacity: 0.8;">
+        Error Code: 404 • ${new Date().toLocaleDateString('en-IN')}
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Check if user has a token to redirect to dashboard
+    const token = localStorage.getItem('token') || '';
+    const homeButton = document.querySelector('.button-primary');
+    
+    if (token) {
+      homeButton.textContent = 'Go to Dashboard';
+      homeButton.onclick = function() {
+        window.location.href = '/dashboard';
+      };
+    } else {
+      homeButton.textContent = 'Go to Login';
+      homeButton.onclick = function() {
+        window.location.href = '/login';
+      };
+    }
+    
+    // Capture 404 path for analytics
+    console.warn('404 Page Accessed:', window.location.pathname);
+  </script>
+</body>
+</html>
