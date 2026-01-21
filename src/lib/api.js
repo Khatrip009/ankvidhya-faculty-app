@@ -100,6 +100,12 @@ function getApiBase() {
 
 var warnedOnceNoToken = false;
 
+function joinUrl(base, path) {
+  if (!path) return base;
+  if (path.startsWith("http")) return path;
+  return base.replace(/\/+$/, "") + "/" + path.replace(/^\/+/, "");
+}
+
 /* MAIN REQUEST FUNCTION */
 export async function request(url, options) {
   options = options || {};
@@ -130,8 +136,8 @@ export async function request(url, options) {
     try { console.warn("[api] No token available. API calls may return 401."); } catch (e) {}
     warnedOnceNoToken = true;
   }
+var fullUrl = joinUrl(base, url);
 
-  var fullUrl = url.indexOf("http") === 0 ? url : base + url;
   var finalUrl = fullUrl + qs(query);
 
   var response;
