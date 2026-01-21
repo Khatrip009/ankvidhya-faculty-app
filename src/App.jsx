@@ -14,7 +14,7 @@ import VideoPlayer from "./pages/faculty/VideoPlayer";
 import EmployeeAttendancePage from "./pages/attendance/EmployeeAttendancePage";
 import FacultyDailyProgress from "./pages/faculty/facultyDailyProgress";
 import Profile from "./pages/Profile";
-
+import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
@@ -128,7 +128,7 @@ export default function App() {
         {/* ---------- FALLBACKS ---------- */}
         <Route path="/" element={<Navigate to="/login" replace />} />
         <Route path="*" element={<Navigate to="/login" replace />} />
-
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
