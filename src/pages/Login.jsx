@@ -93,7 +93,7 @@ export default function Login() {
     setBusy(true);
     try {
       // send login request
-      const res = await api.post("/auth/login", {
+      const res = await api.post("api/auth/login", {
         usernameOrEmail: identifier.trim(),
         password,
       });
