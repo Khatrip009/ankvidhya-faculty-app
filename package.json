@@ -1,13 +1,15 @@
 {
   "name": "ankvidhya-faculty-app",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "homepage": "https://faculty.ankvidhya.com",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fullcalendar/list": "^6.1.20",
@@ -36,9 +38,6 @@
     "globals": "^16.5.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.18",
-    "vite": "npm:rolldown-vite@7.2.5"
-  },
-  "overrides": {
     "vite": "npm:rolldown-vite@7.2.5"
   }
 }
